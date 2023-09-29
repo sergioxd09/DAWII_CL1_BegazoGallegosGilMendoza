@@ -15,10 +15,13 @@ import lombok.Setter;
 public class Peinado {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer IdPeinado;
-    @Column(name="PrecioPeinado")
-    private String PrecioPeinado;
-    @Column(name="TiempoPeinado")
-    private String TiempoPeinado;
+    private Integer id_peinado;
+    @Column(name="precio_peinado")
+    private String precio_peinado;
+    @Column(name="tiempo_peinado")
+    private String tiempo_peinado;
 
+    @OneToOne
+    @JoinColumn(name="id_desc_peinado")
+    private DescPeinado descpeinado;
 }

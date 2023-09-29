@@ -1,24 +1,16 @@
 package pe.edu.cibertec.DAWII_CL1_BegazoGallegosGilMendoza.model.bd;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name="descpeinado")
 public class DescPeinado {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer IdDescPeinado;
-    @Column(name="DescPeinado")
-    private String DescPeinado;
-    @OneToMany
-    @JoinColumn(name="IdPeinado")
-    private Peinado peinado;
+    private Integer id_desc_peinado;
+    @Column(name="desc_peinado")
+    private String desc_peinado;
 }
