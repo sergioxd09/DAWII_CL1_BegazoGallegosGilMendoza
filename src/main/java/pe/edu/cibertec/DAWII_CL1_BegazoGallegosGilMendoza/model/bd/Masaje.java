@@ -11,7 +11,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="name")
+@Table(name="masaje")
 public class Masaje {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,5 +24,5 @@ public class Masaje {
 
     @OneToOne
     @JoinColumn(name = "id_desc_masaje")
-    private DescMasaje decmasaje;
+    private DescMasaje descmasaje;
 }

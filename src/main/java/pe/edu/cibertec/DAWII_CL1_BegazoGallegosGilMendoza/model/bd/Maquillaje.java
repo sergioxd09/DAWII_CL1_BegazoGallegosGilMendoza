@@ -23,5 +23,5 @@ public class Maquillaje {
 
     @OneToOne
     @JoinColumn(name="id_desc_maquillaje")
-    private DescMaquillaje descMaquillaje;
+    private DescMaquillaje descmaquillaje;
 }

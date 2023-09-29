@@ -28,7 +28,7 @@ public class MaquillajeService {
 
             DescMaquillaje descMaquillaje = new DescMaquillaje();
             descMaquillaje.setId_desc_maquillaje(maquillaje.getId_desc_maquillaje());
-            objMaquillaje.setDescMaquillaje(descMaquillaje);
+            objMaquillaje.setDescmaquillaje(descMaquillaje);
 
 
             maquillajeRepository.save(objMaquillaje);
