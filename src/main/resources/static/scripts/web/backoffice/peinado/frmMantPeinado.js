@@ -3,14 +3,15 @@ $(document).on("click","#btnagregar",function(){
     $("#txtprecio").val("");
     $("#cbodesc").empty();
     $("#hddcodpei").val("0");
+        listarCbo(0);
     $("#modalNuevo").modal("show");
-
 });
 
 $(document).on("click", ".btnactualizar", function(){
     $("#txttiempo").val($(this).attr("data-peiname"));
     $("#txtprecio").val($(this).attr("data-peiprice"));
      $("#cbodesc").empty();
+         listarCbo($(this).attr("data-peiDescPei"));
     $("#hddcodpei").val($(this).attr("data-peicod"));
     $("#modalNuevo").modal("show");
 });
