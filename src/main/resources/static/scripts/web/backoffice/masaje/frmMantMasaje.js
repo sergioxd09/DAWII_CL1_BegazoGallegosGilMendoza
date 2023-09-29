@@ -70,7 +70,7 @@ function listarMasaje(){
                     "<td>"+value.precio_masaje+"</td>"+
                     "<td>"+value.descmasaje.desc_masaje+"</td>"+
                     "<td>"+
-                        "<button type='button' class='btn btn-info btnactualizar'"+
+                        "<button type='button' class='btn btn-warning btnactualizar'"+
                                      "data-masacod='"+value.id_masaje+"'"+
                                      "data-masaname='"+value.tiempo_masaje+"'"+
                                      "data-masaprice='"+value.precio_masaje+"'"+
