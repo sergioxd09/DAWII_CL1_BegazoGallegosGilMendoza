@@ -23,5 +23,5 @@ public class Manicura {
 
     @OneToOne
     @JoinColumn(name = "id_desc_manicura")
-    private DescManicura descManicura;
+    private DescManicura descmanicura;
 }

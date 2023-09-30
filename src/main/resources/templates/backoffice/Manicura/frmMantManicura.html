@@ -28,7 +28,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="man :${listaManicura}">
+            <tr th:each="man :${listarManicura}">
                 <td th:text="${man.id_manicura}"></td>
                 <td th:text="${man.tiempo_manicura}"></td>
                 <td th:text="${man.precio_manicura}"></td>
@@ -67,7 +67,7 @@
                     <label for="cbodesc" class="form-label">Descripcion de Manicure</label>
                     <select id="cbodesc" class="form-control"></select>
                 </div>
-                <input type="hidden" id="hddcodpei" value="0">
+                <input type="hidden" id="hddcodman" value="0">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times"></i> Cancelar</button>

@@ -19,7 +19,7 @@ $(document).on("click", ".btnactualizar", function(){
 $(document).on("click","#btnguardar",function(){
     $.ajax({
         type:"Post",
-        url:"/peinado/guardar",
+        url:"/manicura/guardar",
         contentType:"application/json",
         data: JSON.stringify({
             id_manicura: $("#hddcodman").val(),
